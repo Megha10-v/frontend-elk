@@ -1,0 +1,24 @@
+.recommended-posts {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+  }
+  
+  .recommended-post-card {
+    border: 1px solid #ccc;
+    padding: 16px;
+    border-radius: 8px;
+    /* background-color: #f9f9f9; */
+    width: calc(23% - 16px);
+  }
+  
+  .recommended-post-card h2 {
+    font-size: 1.2em;
+    margin-bottom: 8px;
+  }
+  
+  .recommended-post-card p {
+    font-size: 0.9em;
+    color: #666;
+  }
+  
