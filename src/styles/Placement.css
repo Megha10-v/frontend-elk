@@ -1,0 +1,66 @@
+
+.placementmain{
+    padding-top: 3rem;
+    width: 90%;
+    margin-left: 5%;
+    padding-bottom: 3rem;
+  }
+  .placementmain .placementcardmain{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 30px;
+    padding: 10px;
+  }
+  .placementmain .placementcardmain .placementcard{
+    height: 100%;
+  }
+  .placementmain .placementcardmain .placementcard .placementimage{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  .placementmain .placementcardmain .placementcard .placementimage img{
+    height: 300px;
+    width: 300px;
+    border-radius: 5%;
+  }
+  .placementmain .placementcardmain .placementcard .placementname{
+    width: 100%;
+    text-align: center;
+    font-size: 1.4rem;
+    color: black;
+    font-weight: 700;
+    margin: 5px 0;
+  }
+  .placementmain .placementcardmain .placementcard .placementpos{
+    text-align: center;
+    width: 100%;
+    font-size: 1.2rem;
+    font-weight: 400;
+    color: black;
+  }
+  .placementmain .placementcardmain .placementcard .placementcourse{
+    text-align: center;
+    width: 100%;
+    font-size: 1rem;
+    font-weight: 400;
+    color: brown;
+  }
+  .placementmain .placementcardmain .no-placement{
+    height: 100vh;
+    width: 100%;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+  }
+  .placementmain .no-placement h1{
+    text-align: center;
+    width: 100%;
+  }
+  @media (max-width: 600px) {
+    .placementmain .placementcardmain{
+      grid-template-columns: repeat(1, 1fr);
+    }
+  }

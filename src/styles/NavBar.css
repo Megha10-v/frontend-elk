@@ -1,0 +1,114 @@
+.mynav {
+    z-index: 10;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #ffffff;
+    height: 6rem;
+    color: rgb(0, 0, 0);
+    box-shadow: 0 1px 10px 0px rgba(0, 0, 0, 0.3);
+}
+.mynav-logo {
+    width: 20%;
+    padding-left: 10px;
+    order: 1;
+}
+.mynav-logo img{
+    width: 100%;
+    height: 100%;
+}
+.mynav-links {
+    margin-left: 10px;
+    width: 65%;
+    display: flex;
+    gap: 1rem;
+    order: 2;
+}
+
+.mynav-links a {
+    color: rgb(0, 0, 0);
+    font-weight: 500;
+    font-size: 1rem;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+.mynav-links a:hover{
+    color: #166736;
+}
+
+.mynav-toggle {
+    margin-left: 20px;
+    display: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+.connectsec{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    margin-right: 20px;
+    order: 3;
+}
+.connectsec .social{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    margin-right: 20px;
+}
+.connectsec span{
+    color: white;
+    cursor: pointer;
+    font-size: 1.5rem;
+    margin-left: 20px;
+}
+.connectsec div{
+    cursor: pointer;
+    margin-left: 10px;
+}
+.connectsec span:hover{
+    background-color: black;
+    color: #166736;
+}
+@media (max-width: 600px) {
+    .mynav {
+        position: static;
+        flex-direction: column;
+        align-items: flex-start;
+        height: auto;
+    }
+    .mynav-logo {
+        width: 100%;
+        padding: 0;
+        height: 3rem;
+        display: flex;
+        justify-content: center;
+    }
+    .mynav-logo img{
+        object-fit: contain;
+        margin: 10px;
+    }
+    .mynav-links {
+        margin-left: 20px;
+        display: none;
+        flex-direction: column;
+        width: 80%;
+        margin-bottom: 30px;
+    }
+    .mynav-links.open {
+        display: flex;
+    }
+    .mynav-toggle {
+        display: block;
+    }
+    .connectsec{
+        width: 100%;
+        justify-content: space-between;
+    }
+    .connectsec .num{
+        visibility: hidden;
+        width: 0;
+    }
+}

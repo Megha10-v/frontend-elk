@@ -1,0 +1,100 @@
+.loginmain{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+}
+.loginmain .loginimage{
+    width: 55%;
+    height: 100%;
+}
+.loginmain .loginimage img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.loginmain .loginform{
+    width: 29%;
+    margin-left: 8%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.loginmain .loginform .label{
+    font-size: 12px;
+    margin-left: 10px;
+    color: #39151b;
+    margin-top: 20px;
+}
+.loginmain .loginform .input{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    width: 100%;
+    border: 1px solid rgba(0, 0, 0, 0.336);
+    border-left: 3px solid #39151b;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.loginmain .loginform .input input{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 95%;
+    background:transparent;
+    width: 96%;
+    padding: 0 2%;
+    border: none;  
+    outline: none;  
+    border-radius: 10px;
+    font-size: 18px;
+}
+.loginmain .loginform .forgot{
+    width: 100%;
+    padding: 10px 0;
+    text-decoration: none;
+    font-size: 16px;
+    color: #39151b;
+    font-weight: 700;
+    text-align: end;
+    cursor: pointer;
+}
+.loginmain .loginform button{
+    width: 100%;
+    height: 40px;
+    font-size: 20px;
+    font-weight: 700;
+    color: white;
+    background-color: #39151b;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    margin-top: 20px;
+    cursor: pointer;
+}
+.loginmain .loginform .loginlogo{
+    width: 100%;
+    height: 5rem;
+}
+.loginmain .loginform .loginlogo img{
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+}
+@media (max-width: 768px) {
+    .loginmain{
+        height: 100%;
+        flex-direction: column;
+    }
+    .loginmain .loginimage{
+        width: 100%;
+        height: 100%;
+        display: none;
+    }
+    .loginmain .loginform{
+        width: 94%;
+        margin-top: 50px;
+        margin-left: 3%;
+    }
+}

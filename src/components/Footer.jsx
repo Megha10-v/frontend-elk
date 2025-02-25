@@ -11,20 +11,20 @@ const Footer = () => {
     <Container fluid style={{ backgroundColor: '#E5E5E5' }} id='contacts' >
       <Row className="text-center">
         <Col md={4} sm={12}>
-        <a href="/" style={{ display: 'inline-block' }}>
+        <Link to="/" style={{ display: 'inline-block' }}>
           <Image src={logonew} thumbnail alt="Company Logo"  style={{width: '400px', height: '250px',backgroundColor: 'transparent'}} />
-        </a>
+        </Link>
         </Col>
         <Col className='mt-md-5 mb-4' md={2} sm={12} >
           <Row className='justify-content-center'>
-            <a href="https://play.google.com" target="_blank" rel="noopener noreferrer">
+            <Link to="https://play.google.com" target="_blank" rel="noopener noreferrer">
               <Image src={layer1} alt="Google Play" fluid style={{ maxWidth: '150px', margin: '10px 0' }} />
-            </a>
+            </Link>
           </Row>
           <Row className='justify-content-center'>
-            <a href="https://www.apple.com/app-store/" target="_blank" rel="noopener noreferrer">
+            <Link to="https://www.apple.com/app-store/" target="_blank" rel="noopener noreferrer">
               <Image src={layer2} alt="App Store" fluid style={{ maxWidth: '150px' }} />
-            </a>
+            </Link>
           </Row>
         </Col>
         <Col  md={2} sm={12} className='text-center mt-md-5'>
@@ -43,20 +43,20 @@ const Footer = () => {
         </Link>
           </p>
 
-          <p style={{fontSize:'15px'}}><a href="https://elkbusinesshub.com/careers" target="_blank" className="text-dark">Careers</a></p>
-          <p style={{fontSize:'15px'}}><a href="https://elkbusinesshub.com/terms" target="_blank" className="text-dark">Terms of Use</a></p>
-          <p style={{fontSize:'15px'}}><a href="https://elkbusinesshub.com/privacy" target="_blank" className="text-dark">Privacy Policy</a></p>
+          <p style={{fontSize:'15px'}}><Link to="https://elkbusinesshub.com/careers" target="_blank" className="text-dark">Careers</Link></p>
+          <p style={{fontSize:'15px'}}><Link to="https://elkbusinesshub.com/terms" target="_blank" className="text-dark">Terms of Use</Link></p>
+          <p style={{fontSize:'15px'}}><Link to="https://elkbusinesshub.com/privacy" target="_blank" className="text-dark">Privacy Policy</Link></p>
         </Col>
         <Col md={2} sm={12}  className='text-center mt-md-5'>
           <h6 className=" font-weight-bold">Get Social</h6>
-          <p style={{fontSize:'15px'}}><a href="https://www.instagram.com/elkcompany2024?igsh=a2s4dTVpbmQ0amNm" className="text-dark">Instagram</a></p>
-        <p style={{fontSize:'15px'}}><a href="https://www.linkedin.com/company/elkcompany/" className="text-dark">LinkedIn</a></p>
-          {/* <p style={{fontSize:'15px'}}><a href="#" className="text-dark">Facebook</a></p> */}
-      <p style={{fontSize:'15px'}}><a href="https://x.com/elkcompanyin?t=pOgye8kJHalI7o-00wpJJA&s=09" className="text-dark">X</a></p>
+          <p style={{fontSize:'15px'}}><Link to="https://www.instagram.com/elkcompany2024?igsh=a2s4dTVpbmQ0amNm" className="text-dark">Instagram</Link></p>
+        <p style={{fontSize:'15px'}}><Link to="https://www.linkedin.com/company/elkcompany/" className="text-dark">LinkedIn</Link></p>
+          {/* <p style={{fontSize:'15px'}}><Link to="#" className="text-dark">Facebook</Link></p> */}
+      <p style={{fontSize:'15px'}}><Link to="https://x.com/elkcompanyin?t=pOgye8kJHalI7o-00wpJJA&s=09" className="text-dark">X</Link></p>
         </Col>
         <Col md={2} sm={12}  className='text-center mt-md-5'>
           <h6 className=" font-weight-bold">Support</h6>
-          {/* <p style={{marginTop:'30px',fontSize:'15px'}}><a href="#" className="text-dark">Help</a></p> */}
+          {/* <p style={{marginTop:'30px',fontSize:'15px'}}><Link href="#" className="text-dark">Help</Link></p> */}
           <p style={{fontSize:'15px'}}><Link  to="https://elkbusinesshub.com/privacy"  target="_blank" className="text-dark" onClick={() => {
           // Scroll to the 'aboutus' section on home page
           setTimeout(() => {
@@ -66,7 +66,7 @@ const Footer = () => {
             }
           }, 0);
         }}>Contact Us</Link></p>
-          {/* <p style={{fontSize:'15px'}}><a href="#" className="text-dark">Call Us</a></p> */}
+          {/* <p style={{fontSize:'15px'}}><Link href="#" className="text-dark">Call Us</Link></p> */}
            <p style={{fontSize:'15px'}}><Link  to="https://elkbusinesshub.com/privacy" target="_blank" className="text-dark" onClick={() => {
           // Scroll to the 'aboutus' section on home page
           setTimeout(() => {

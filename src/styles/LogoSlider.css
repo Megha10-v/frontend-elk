@@ -1,0 +1,61 @@
+@keyframes slide {
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(-100%);
+    }
+  }
+
+  .sliderlogos {
+    margin: 100px 0;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    padding: 10px 0;
+    white-space: nowrap;
+    position: relative;
+  }
+  .sliderlogos .logo-img{
+    height: 100px;
+    width: 150px;
+  }
+  .sliderlogos .logo-img img{
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+  }
+  .sliderlogos .space{
+    width: 50px;
+    height: 100px;
+  }
+  .sliderlogos:before,
+  .sliderlogos:after {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    content: "";
+    z-index: 2;
+    object-fit: contain;
+  }
+  .sliderlogos:before {
+    left: 0;
+    background: linear-gradient(to left, rgba(255, 255, 255, 0),rgba(255, 255, 255, 0),rgba(255, 255, 255, 0),rgba(255, 255, 255, 0), #ffffff);
+  }
+  .sliderlogos:after {
+    right: 0;
+    background: linear-gradient(to right, rgba(255, 255, 255, 0),rgba(255, 255, 255, 0),rgba(255, 255, 255, 0),rgba(255, 255, 255, 0), #ffffff);
+  }
+  .sliderlogos-slide {
+    display: flex;
+    animation: 100s slide infinite linear;
+  }
+
+
+  @media only screen and (max-width: 1024px) {
+    .logo-text{
+      font-size: 36px;
+    }
+  }

@@ -1,0 +1,175 @@
+.coursehead{
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    width: 94%;
+    margin-left: 3%;
+    margin-top: 100px;
+    margin-bottom: 20px;
+}
+.coursemain{
+    width: 100%;
+    margin-bottom: 50px;
+    display: flex;
+}
+.coursemain .coursecontent{
+    width: 67%;
+    margin-left: 3%;
+    height: 90vh;
+    overflow-y: scroll;
+}
+.coursemain .coursecontent .coursedisc{
+    font-size: 1.3rem;
+    width: 95%;
+}
+.coursemain .coursecontent::-webkit-scrollbar {
+    width: 0;
+}
+.coursemain .coursecontent .courseimage{
+    width: 95%;
+    height: 100%;
+    margin-bottom: 20px;
+}
+.coursemain .coursecontent .courseimage img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.coursehorizontal{
+    width: 94%;
+    height: 1px;
+    background-color: #166736;
+    color: #39151b;
+    margin-left: 3%;
+    margin-top: 1px;
+}
+.relatehead{
+    font-size: 2.5rem;
+    font-weight: 700;
+    width: 100%;
+    text-align: center;
+    margin-top: 50px;
+}
+.coursemain .courseenquiry{
+    width: 27%;
+    height: 100%;
+}
+
+.coursemain .courseenquiry .enqform{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 94%;
+    margin-left: 3%;
+    height: 100%;
+    background-color: white;
+    border-radius: 20px;
+    margin-bottom: 100px;
+}
+.coursemain .courseenquiry .enqform .quickhead{
+    margin: 20px 0;
+    font-size: 1.4rem;
+    font-weight: 800;
+}
+.coursemain .courseenquiry .enqform .quicktextboxes{
+    width: 100%;
+}
+.coursemain .courseenquiry .enqform .quicktextboxes .textbox{
+    width: 100%;
+    margin-bottom: 10px;
+}
+.coursemain .courseenquiry .enqform .quicktextboxes .textbox .inner{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #39151b;
+    border-left: 3px solid #166736;
+    border-radius: 10px;
+}
+.coursemain .courseenquiry .enqform .quicktextboxes .textbox .inner input{
+    height: 40px;
+    width: 94%;
+    background-color: transparent;
+    border: none;
+    border-radius: 10px;
+    outline: none;
+    font-size: 1.1rem;
+    margin-left: 2%;
+}
+.coursemain .courseenquiry .enqform .quicksendbutton{
+    width: 200px;
+    border-radius: 25px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1rem;
+    font-weight: 600;
+    height: 50px;
+    background-color: #39151b;
+    margin: 30px 0;
+    margin-bottom: 60px;
+    transition: all 0.3s ease;
+    border: none;
+    outline: none;
+}
+.coursemain .courseenquiry .enqform .quicksendbutton:hover{
+    width: 210px;
+}
+.coursemain .courseenquiry .enqform .quicktextare{
+    width: 100%;
+}
+.coursemain .courseenquiry .enqform .quicktextare .textarea{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #39151b;
+    border-left: 3px solid #166736;
+    border-radius: 10px;
+}
+.coursemain .courseenquiry .enqform .quicktextare .textarea textarea{
+    background-color: transparent;
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    border: none;
+    border-radius: 10px;
+    outline: none;
+    font-size: 1.3rem;
+    margin-left: 1%;
+}
+@media (max-width: 600px) {
+    .coursemain{
+        flex-direction: column;
+    }
+    .coursemain .coursecontent{
+        width: 96%;
+        margin-left: 2%;
+        height: 100%;
+        overflow-y: hidden;
+    }
+    .coursemain .courseenquiry{
+        width: 100%;
+        height: 100%;
+    }
+    .coursemain .courseenquiry .enqform{
+        margin-top: 50px;
+        margin-bottom: 0;
+    }
+    .coursehead{
+        font-size: 1.9rem;
+        width: 96%;
+        margin-left: 2%;
+        margin-top: 30px;
+    }
+    .coursemain .coursecontent .coursedisc{
+        font-size: 1.1rem;
+        width: 100%;
+    }
+    .coursemain .coursecontent .courseimage{
+        width: 100%;
+    }
+}

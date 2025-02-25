@@ -1,0 +1,85 @@
+.homeabout1{
+    display: flex;
+    padding-bottom: 100px;
+}
+.homeabout1 .logosec{
+    display: flex;
+    width: 60%;
+    /* background-color: #39151b94; */
+}
+.homeabout1 .logosec img{
+    height: 100%;
+    width: 25%;
+    object-fit: contain;
+}
+.homeabout1 .textsec{
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    color: rgb(255, 255, 255);
+    /* background-color: #39151ba4; */
+}
+.homeabout1 .textsec .head{
+    font-size: 36px;
+    font-weight: bold;
+    margin-right: 50px;
+    margin-bottom: 20px;
+}
+.homeabout1 .textsec .content{
+    font-size: 18px;
+    margin-right: 50px;
+}
+.homeabout1 .textsec .allbutton{
+    margin-top: 20px;
+    font-size: 1.5rem;
+    width: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(255, 255, 255);
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+.homeabout1 .textsec .allbutton .buttonarrow{
+    font-size: 2rem;
+    margin-left: 15px;
+    transition: all 0.3s ease;  
+}
+.homeabout1 .textsec .allbutton:hover .buttonarrow{
+    color: white;
+    margin-left: 20px;
+}
+@media only screen and (max-width: 600px) {
+    .homeabout1{
+        flex-direction: column;
+        padding-bottom: 50px;
+    }
+    .homeabout1 .logosec{
+        width: 100%;
+        margin: 10px 0;
+    }
+    .homeabout1 .textsec{
+        margin: 0 2%;
+        width: 96%;
+    }
+    .homeabout1 .textsec .head{
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+    .homeabout1 .textsec .content{
+        margin-right: 0;
+    }
+    .homeabout1 .textsec .content{
+        font-size: 14px;
+    }
+    .homeabout1 .textsec .allbutton{
+        margin-top: 10px;
+        font-size: 1.2rem;
+        justify-content: flex-start;
+    }
+    .homeabout1 .textsec .allbutton .buttonarrow{
+        font-size: 1.3rem;
+        margin-left: 10px;
+    }
+}

@@ -1,0 +1,113 @@
+.homeabout2{
+  position: relative;
+  top: -50px;
+  margin-bottom: 100px;
+}
+.homeabout2 .container {
+  width: 1300px;
+  margin: 0 auto;
+}
+.homeabout2 .container .row{
+  background: url(../assets/backgrounds/h2bg.png) no-repeat top right;
+  width: 100%;
+  display: block;
+  float: left;
+  padding-left: 100px;
+  padding-bottom: 0;
+  padding-top: 100px;
+}
+.homeabout2 .container .row .text{
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+  
+}
+.text .span{
+  font-size: 1.3rem;
+  margin: 5px;
+  margin-left: 100px;
+  font-weight: bold;
+}
+.text .horizontalline{
+  height: 5px;
+  width: 58%;
+  margin-left: 100px;
+  margin-bottom: 20px;
+  background-color: #39151b;
+}
+.text .btn{
+  font-size: 1rem;
+  margin: 5px;
+  margin-top: 20px;
+  margin-left: 100px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+.text .plan{
+  font-size: 1.3rem;
+  font-weight: bold;
+}
+.text .neetjee{
+  font-size: 4rem;
+  font-weight: 900;
+}
+.text .btn .btnarrow{
+  font-size: 1.3rem;
+  color: #39151b;
+  margin-left: 10px;
+  transition: margin-left 0.3s ease;
+}
+.text .btn:hover .btnarrow{
+  margin-left: 20px;
+}
+@media only screen and (max-width: 600px) {
+  .homeabout2{
+    position: relative;
+    top: -50px;
+    margin-bottom: 0;
+  }
+  .homeabout2 .container {
+    width: 100%;
+    margin: 0 auto;
+  }
+  .homeabout2 .container .row{
+    background-size: contain;
+    display: block;
+    float: none;
+    padding-left: 0;
+    padding-bottom: 0;
+  }
+  .homeabout2 .container .row .text{
+    display: flex;
+    flex-direction: column;
+    margin-top: 100px; 
+  }
+  .text .plan{
+    margin-left: 10px;
+    font-size: 1.3rem;
+    font-weight: bold;
+  }
+  .text .neetjee{
+    margin-left: 10px;
+    font-size: 3rem;
+    font-weight: 900;
+  }
+  .text .span{
+    font-size: 1.5rem;
+    margin: 5px;
+    font-weight: 400;
+    margin-left: 10px;
+  }
+  .text .horizontalline{
+    height: 3px;
+    margin-bottom: 10px;
+    width: 90%;
+    margin-left: 10px;
+  }
+  .text .btn{
+    margin: 0;
+    margin-top: 10px;
+    margin-left: 10px;
+  }
+}

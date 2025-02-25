@@ -1,0 +1,19 @@
+.adminfooter{
+    width: calc(100% - 250px) !important;
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    bottom: 0;
+    margin-left: 250px;
+    background-color: #ffffff;
+    height: 4rem;
+    color: rgb(0, 0, 0);
+    font-size: 16px;
+}
+@media only screen and (max-width: 600px) {
+    .adminfooter{
+        width: 100% !important;
+        margin-left: 0;
+    }
+}
