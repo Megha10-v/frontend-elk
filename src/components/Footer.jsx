@@ -56,7 +56,6 @@ const Footer = () => {
         </Col>
         <Col md={2} sm={12}  className='text-center mt-md-5'>
           <h6 className=" font-weight-bold">Support</h6>
-          {/* <p style={{marginTop:'30px',fontSize:'15px'}}><Link href="#" className="text-dark">Help</Link></p> */}
           <p style={{fontSize:'15px'}}><Link  to="https://elkbusinesshub.com/privacy"  target="_blank" className="text-dark" onClick={() => {
           // Scroll to the 'aboutus' section on home page
           setTimeout(() => {
@@ -66,7 +65,6 @@ const Footer = () => {
             }
           }, 0);
         }}>Contact Us</Link></p>
-          {/* <p style={{fontSize:'15px'}}><Link href="#" className="text-dark">Call Us</Link></p> */}
            <p style={{fontSize:'15px'}}><Link  to="https://elkbusinesshub.com/privacy" target="_blank" className="text-dark" onClick={() => {
           // Scroll to the 'aboutus' section on home page
           setTimeout(() => {
