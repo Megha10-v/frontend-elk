@@ -10,6 +10,8 @@ import LoginPage from './components/LoginPage';
 import Footer from './components/Footer';
 import Tabs from './components/Tabs';
 import AdTabs from './components/AdTabs';
+import AdminHome from './components/admin2/AdminHome';
+import AdminNotificationForm from './components/admin2/AdminNotification';
 
 function App() {
     const dispatch = useDispatch();
@@ -46,6 +48,8 @@ function App() {
                 <Route path="/" element={<Tabs />} />
                 <Route path="/login" element={<LoginPage />} />
                 <Route path="/post-ad" element={<AdTabs />} />
+                <Route path="/" element={<AdminHome />} />
+                <Route path='/notification' element={<AdminNotificationForm/>}/>
             </Routes>
             <Footer />
         </>

@@ -1,0 +1,16 @@
+.footvideo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding-top: 50px;
+    background: linear-gradient(to top, rgba(0, 0, 0,1) 50%, transparent 50%); 
+}
+.footvideo .video{
+    width: 50%;
+}
+@media (max-width: 600px) {
+    .footvideo .video{
+        width: 90%;
+    }
+}

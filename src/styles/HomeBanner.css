@@ -1,0 +1,82 @@
+.home-banner {
+  position: relative;
+  width: 100%;
+  height: 720px;
+  overflow: hidden;
+}
+.home-banner img {
+  width: 100%;
+  height: 100%;
+  height: auto;
+  object-fit: cover;
+  transition: opacity 1s ease; 
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  margin-top: 6rem;
+}
+.home-banner img.active {
+  opacity: 1;
+}
+.home-banner button {
+  color: rgb(0, 0, 0);
+  position: absolute;
+  top: 4rem;
+  transform: translateY(-50%);
+  background-color: transparent;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  font-size: 3rem;
+  font-weight: 900;
+  transition: font-size 0.3s ease-in;
+}
+.home-banner button:hover{
+  font-size: 2.9rem;
+}
+.home-banner .prev-button {
+  right: 100px;
+}
+
+.home-banner .next-button {
+  right: 30px;
+}
+.slide-in-right {
+  animation: slideInFromRight 0.5s forwards;
+}
+
+.slide-out-left {
+  animation: slideOutToLeft 0.5s forwards;
+}
+
+.slide-in-left {
+  animation: slideInFromLeft 0.5s forwards;
+}
+
+.slide-out-right {
+  animation: slideOutToRight 0.5s forwards;
+}
+@media (max-width: 600px){
+  .home-banner {
+    width: 100%;
+    height: 190px;
+    margin-top: 7rem;
+  }
+  .home-banner img {
+    object-fit: cover;
+    margin-top: 0;    
+  }
+  .home-banner button {
+    font-size: 2rem;
+  }
+  .home-banner button:hover{
+    font-size: 2.5rem;
+  }  
+  .home-banner .next-button {
+    right: 30px;
+  }
+  .home-banner .prev-button {
+    right: 70px;
+  }
+}

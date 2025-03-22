@@ -1,0 +1,30 @@
+.home{
+    display: flex;
+    flex-direction: column;
+}
+.home .homecountabout{
+    position: relative;
+}
+.home .homecountabout::after{
+    content: '';
+    position: absolute;
+    top: 13%; 
+    width: 100%;
+    left: 0%;
+    height: 87%; 
+    background: linear-gradient(#39151ba1, #39151ba1),url(../assets/ill2.webp) no-repeat;
+    opacity: 1;
+    background-size: cover;
+    background-position: center;
+    z-index: -1; 
+}
+@media only screen and (max-width: 600px) {
+    .home .homecountabout::after{
+        top: 11%; 
+        width: 100%;
+        left: 0%;
+        height: 89%;
+        background-size: cover;
+        background-position: center;
+    }
+}

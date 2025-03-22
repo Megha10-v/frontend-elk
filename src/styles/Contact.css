@@ -1,0 +1,227 @@
+.contactmain{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    padding: 50px 0;
+    margin-top: 50px;
+}
+.contactmain .contacthead{
+    width: 96%;
+    margin-left: 2%;
+    font-weight: 200;
+    font-size: 2rem;
+    margin-bottom: 30px;
+}
+.contactmain .contacttextboxes{
+    width: 96%;
+    display: grid;
+    margin: 20px 0;
+    grid-gap: 1rem;
+    grid-template-columns: repeat(2,1fr);
+}
+.contactmain .contacttextboxes .textbox{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.contactmain .contacttextboxes .textbox .inner{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 0.5px solid rgba(0, 0, 0, 0.26);
+    border-left: 3px solid #39151b;
+    border-radius: 10px;
+}
+.contactmain .contacttextboxes .textbox .inner input{
+    height: 45px;
+    width: 94%;
+    background-color: transparent;
+    border: none;
+    border-radius: 10px;
+    outline: none;
+    font-size: 1.3rem;
+    margin-left: 2%;
+}
+.contactmain .contactsendbutton{
+    width: 200px;
+    border-radius: 25px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1rem;
+    font-weight: 600;
+    height: 50px;
+    background-color: #39151b;
+    margin: 30px 0;
+    margin-bottom: 60px;
+    transition: all 0.3s ease;
+    border: none;
+    outline: none;
+}
+.contactmain .contactsendbutton:hover{
+    width: 210px;
+}
+.contactmain .contacttextare{
+    width: 96%;
+}
+.contactmain .contacttextare .textarea{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 0.5px solid rgba(0, 0, 0, 0.26);
+    border-left: 3px solid #39151b;
+    border-radius: 10px;
+}
+.contactmain .contacttextare .textarea textarea{
+    background-color: transparent;
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    border: none;
+    border-radius: 10px;
+    outline: none;
+    font-size: 1.3rem;
+    margin-left: 1%;
+}
+
+.contactaddress{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    margin-bottom: 100px;
+}
+.contactaddress .address{
+    width: 30%;
+    height: 100%;
+}
+.contactaddress .address .addresscard{
+    width: calc(100%-30px);
+    height: 100%;
+    margin-left: 20px;
+    margin-right: 10px;
+    border-radius: 20px;
+    box-shadow: 0 1px 10px 0px rgba(0, 0, 0, 0.3);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.contactaddress .address .addresscard .horizontalline{
+    width: 90%;
+    height: 1px;
+    margin: 10px 0;
+    background-color: rgba(0, 0, 0, 0.253);
+}
+.contactaddress .address .addresscard .phone,
+.contactaddress .address .addresscard .addresshead,
+.contactaddress .address .addresscard .site,
+.contactaddress .address .addresscard .place{
+    width: 90%;
+    height: 100%;
+    display: flex;
+    margin: 10px 0;
+}
+.contactaddress .address .addresscard .phone span,
+.contactaddress .address .addresscard .site span,
+.contactaddress .address .addresscard .place span{
+    font-size: 16px;
+    font-weight: 400;
+    width: 75%;
+    margin-top: 5px;
+}
+.contactaddress .address .addresscard .phone .icon,
+.contactaddress .address .addresscard .site .icon,
+.contactaddress .address .addresscard .place .icon{
+    width: 20%;
+    height: 100%;
+}
+.contactaddress .address .addresscard .phone .icon .ic,
+.contactaddress .address .addresscard .site .icon .ic,
+.contactaddress .address .addresscard .place .icon .ic{
+    width: 45px;
+    height: 45px;
+    background-color: #39151b;
+    border-radius: 50%;
+    transition: all 0.5s ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 900;
+    color: white;
+    font-size: 1.2rem;
+}
+.contactaddress .address .addresscard .phone:hover .icon .ic,
+.contactaddress .address .addresscard .site:hover .icon .ic,
+.contactaddress .address .addresscard .place:hover .icon .ic{
+    background-color: #163915;
+}
+.contactaddress .address .addresscard .addresshead{
+    font-size: 1.5rem;
+    font-weight: 800;
+    margin-top: 30px;
+}
+.contactaddress .address .addresscard .phone{
+    margin-bottom: 30px;
+}
+.contactaddress .location .locationcard{
+    width: calc(100%-30px);
+    height: 100%;
+    border-radius: 20px;
+    margin-right: 20px;
+    margin-left: 10px;
+    box-shadow: 0 1px 10px 0px rgba(0, 0, 0, 0.3);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.contactaddress .location{
+    width: 70%;
+    height: 100%;
+}
+@media (max-width: 600px) {
+    .contactaddress{
+        flex-direction: column;
+    }
+    .contactaddress .address{
+        width: 100%;
+        margin-bottom: 30px;
+    }
+    .contactaddress .location{
+        width: 100%;
+    }
+    .contactaddress .address .addresscard{
+        width: 94%;
+        margin-left: 3%;
+        margin-right: 0;
+    }
+    .contactaddress .location .locationcard{
+        width: 94%;
+        margin-left: 3%;
+        margin-right: 0;
+    }
+    .contactmain{
+        width: 98%;
+        margin-left: 1%;
+    }
+    .contactmain .contacttextboxes{
+        grid-gap: 1rem;
+        grid-template-columns: repeat(1,1fr);
+    }
+    .contactmain .contacttextboxes .textbox{
+        width: 100%;
+        margin: 10px 0;
+    }
+    .contactmain .contacttextare{
+        width: 96%;
+    }
+}

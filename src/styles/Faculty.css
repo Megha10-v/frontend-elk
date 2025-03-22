@@ -1,0 +1,59 @@
+
+.facmain{
+  padding-top: 3rem;
+  width: 90%;
+  margin-left: 5%;
+  padding-bottom: 3rem;
+}
+.facmain .faccardmain{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 30px;
+  padding: 10px;
+}
+.facmain .faccardmain .faccard{
+  height: 100%;
+}
+.facmain .faccardmain .faccard .facimage{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.facmain .faccardmain .faccard .facimage img{
+  height: 150px;
+  width: 150px;
+  border-radius: 50%;
+}
+.facmain .faccardmain .faccard .facname{
+  width: 100%;
+  text-align: center;
+  font-size: 1.3rem;
+  color: black;
+  font-weight: 700;
+  margin: 5px 0;
+}
+.facmain .faccardmain .faccard .facpos{
+  text-align: center;
+  width: 100%;
+  font-size: 1rem;
+  font-weight: 400;
+  color: black;
+}
+.facmain .faccardmain .no-placement{
+  height: 100vh;
+  width: 100%;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+.facmain .no-placement h1{
+  text-align: center;
+  width: 100%;
+}
+@media (max-width: 600px) {
+  .facmain .faccardmain{
+    grid-template-columns: repeat(1, 1fr);
+  }
+}

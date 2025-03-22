@@ -1,0 +1,44 @@
+.nonotifications{
+    min-height: calc(100vh - 12rem) !important;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.3rem;
+    font-weight: 700;
+}
+.notificationsmain{
+    min-height: calc(100vh - 11rem) !important;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.notificationcard{
+    width: 96%;
+    display: flex;
+    flex-direction: column;
+    margin: 50px 2%;
+}
+.notificationcard .head{
+    font-size: 2rem;
+    font-weight: 900;
+}
+.notificationcard .dateandtype{
+    display: flex;
+    align-items: center;
+}
+.notificationcard .dateandtype .vert{
+    margin: 0 5px;
+    height: 15px;
+    width: 1px;
+    background-color: rgb(0, 0, 0);
+}
+.notificationcard .dateandtype .date{
+    color: #39151b;
+}
+.notificationcard .dateandtype .type{
+    color: #166736;
+}
+.notificationcard .content{
+    margin-top: 15px;
+}

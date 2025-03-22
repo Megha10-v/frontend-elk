@@ -1,0 +1,76 @@
+.adminbanner{
+    min-height: calc(100vh - 8rem) !important;
+    background-color: rgba(206, 206, 206, 0.315);
+}
+.adminbanner .viewtable{
+    width: calc(100% - 250px);
+    margin-left: 250px;
+    height: 100%;
+    padding-bottom: 100px;
+}
+.adminbanner .viewtable .viewcard{
+    width: 94%;
+    height: auto;
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+    margin-left: 3%;
+    padding: 5px 0;
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.adminbanner .viewtable .viewcard img {
+    width: 100%; 
+    height: 300px; 
+    object-fit: contain; 
+    object-position: left;
+    margin: 2%;
+}
+.adminbanner .viewtable .viewcard .buttons{
+    display: flex;
+}
+
+.adminbanner .viewtable.blur {
+    filter: blur(5px);
+    pointer-events: none;
+    user-select: none;
+}
+
+.adminbanner .viewtable .pagehead{
+    width: 90%;
+    margin-left: 5%;
+    padding-top: 40px;
+    margin-bottom: 20px;
+    font-size: 1.5rem;
+    font-weight: 900;
+}
+.adminbanner .viewtable .actionbutton{
+    color: white; 
+    height: 40px;
+    width: 70px;
+    margin: 10px;
+    font-size: 1rem;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+    opacity: 1;
+    cursor: pointer;
+}
+
+
+@media only screen and (max-width: 600px) {
+
+    .adminbanner .viewtable{
+        width: 100%;
+        margin-left: 0;
+        margin-bottom: 50px;
+    }
+    .adminbanner .viewtable .viewcard{
+        flex-direction: column;
+    }
+    
+    .adminbanner .viewtable .viewcard img {
+        margin: 0;
+    }
+}

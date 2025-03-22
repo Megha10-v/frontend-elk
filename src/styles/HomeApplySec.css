@@ -1,0 +1,94 @@
+.homeapplysec{
+    background: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url(../assets/backgrounds/habg.png) no-repeat center center;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    overflow: auto;
+}
+.homeapplysec .sec .texts{
+    margin-left: 40%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 130px;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+.homeapplysec .sec span{
+    color: rgb(0, 0, 0);
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+.homeapplysec .sec .button{
+    width: 140px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 30px;
+    height: 45px;
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    transition: background-color 0.3s ease;
+    margin-bottom: 10px;
+}
+.homeapplysec .sec .button:hover{
+    background-color: #39151b;
+}
+.homeapplysec .sec .button .arrow{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 5px;
+    font-size: 1.5rem;
+    height: 38px;
+    width: 38px;
+    border-radius: 50%;
+    background-color: #39151b;
+    color: rgb(255, 255, 255);
+    transition: transform 0.3s ease,  background-color 0.3s ease;
+}
+.homeapplysec .sec .button:hover .arrow{
+    background-color: black;
+    transform: rotate(-360deg);
+}
+.homeapplysec .sec .texts .medeng{
+    font-size: 2rem;
+    padding: 10px 15px;
+    background-color: #39151b;
+    color: white;
+}
+.homeapplysec .sec .texts .wantclear{
+    font-size: 1.5rem;
+}
+.homeapplysec .sec .texts .entrance{
+    font-size: 4rem;
+}
+@media only screen and (max-width: 600px) {
+    .homeapplysec{
+        height: 100%;
+        width: 100%;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: scroll;
+        overflow: auto;
+        background-position: center;
+    }
+    .homeapplysec .sec .texts{
+        margin-left: 10px;
+        margin-top: 30px;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+    .homeapplysec .sec .texts .medeng{
+        font-size: 1.5rem;
+    }
+    .homeapplysec .sec .texts .wantclear{
+        font-size: 1rem;
+    }
+    .homeapplysec .sec .texts .entrance{
+        font-size: 2rem;
+    }
+}
