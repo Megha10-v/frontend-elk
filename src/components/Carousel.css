@@ -46,17 +46,5 @@
     transform: scale(1.1);
   }
   
-  .tabs button {
-    margin: 5px;
-    padding: 10px 15px;
-    cursor: pointer;
-    background: lightgray;
-    border: none;
-    border-radius: 5px;
-  }
-  
-  .tabs button:hover {
-    background: gray;
-    color: white;
-  }
+
   
